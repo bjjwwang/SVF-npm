@@ -4,6 +4,8 @@ sysOS=`uname -s`
 arch=`uname -m`
 MajorLLVMVer=21
 LLVMVer=${MajorLLVMVer}.1.0
+# Match upstream SVF/build.sh: prebuilt LLVM RTTI tarballs are now hosted under
+# bjjwwang/SVF-LLVM (was SVF-tools/SVF/releases/SVF-3.2 before the LLVM-21 bump).
 UbuntuLLVM_RTTI="https://github.com/bjjwwang/SVF-LLVM/releases/download/${LLVMVer}/llvm-${LLVMVer}-ubuntu22-rtti-x86-64.tar.gz"
 UbuntuArmLLVM_RTTI="https://github.com/bjjwwang/SVF-LLVM/releases/download/${LLVMVer}/llvm-${LLVMVer}-ubuntu22-rtti-aarch64.tar.gz"
 
